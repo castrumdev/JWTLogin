@@ -7,9 +7,11 @@ const { Sequelize, DataTypes } = require('sequelize')
 //const sequelize = new Sequelize(`oregon-postgres.render.com`, { dialect: "postgres" })
 const sequelize = new Sequelize('chatreplay', 'chatreplay_user', 'g8xuYcnUluVpPwb7yTOGxHRAhb0SJtgT',
     { 
-        host: 'postgres://oregon-postgres.render.com/?ssl=true',
+        host: 'postgres://dpg-ci9i2gh8g3ne2ejvdct0-a/chatreplay',
         dialect: "postgres" 
     });
+
+    //postgres://chatreplay_user:g8xuYcnUluVpPwb7yTOGxHRAhb0SJtgT@dpg-ci9i2gh8g3ne2ejvdct0-a/chatreplay
 
 //checking if connection is done
 sequelize.authenticate().then(() => {
