@@ -7,7 +7,7 @@ const { Sequelize, DataTypes } = require('sequelize')
 //const sequelize = new Sequelize(`oregon-postgres.render.com`, { dialect: "postgres" })
 const sequelize = new Sequelize('chtreplay', 'chatreplay_user', 'g8xuYcnUluVpPwb7yTOGxHRAhb0SJtgT',
     { 
-        host: 'oregon-postgres.render.com/chatreplay?ssl=true',
+        host: 'oregon-postgres.render.com',
         dialect: "postgres" 
     });
 
