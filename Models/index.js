@@ -5,9 +5,9 @@ const { Sequelize, DataTypes } = require('sequelize')
 //port for my database is 5433
 //database name is discover
 //const sequelize = new Sequelize(`oregon-postgres.render.com`, { dialect: "postgres" })
-const sequelize = new Sequelize('chtreplay', 'chatreplay_user', 'g8xuYcnUluVpPwb7yTOGxHRAhb0SJtgT',
+const sequelize = new Sequelize('chatreplay', 'chatreplay_user', 'g8xuYcnUluVpPwb7yTOGxHRAhb0SJtgT',
     { 
-        host: 'oregon-postgres.render.com/?ssl=true',
+        host: 'dpg-ci9i2gh8g3ne2ejvdct0-a:5432/?ssl=true',
         dialect: "postgres" 
     });
 
