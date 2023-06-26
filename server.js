@@ -4,23 +4,6 @@ const dotenv = require('dotenv').config()
 const cookieParser = require('cookie-parser')
  const db = require('./Models')
  const userRoutes = require ('./Routes/userRoutes')
- var cron = require('node-cron');
-
-cron.schedule('*/14 * * * *', () => {
-  axios.post('https://jwtlogin.onrender.com/api/users/login', {
-    email: 'email',
-    password: 'password'
-  })
-    .then(response => {
-      console.log('Server is up and running');
-      // Faça o que desejar com a resposta do servidor aqui
-    })
-    .catch(error => {
-      console.log('Server is down');
-      // Faça o que desejar em caso de erro (servidor inacessível) aqui
-    });
-});
-
 
 //setting up your port
 const PORT = process.env.PORT || 3080
